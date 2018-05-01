@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 echo "欢迎使用一键搭建 脚本"
-echo "即将搭建的是Sadar v05.02 修复载具跟随版本"
+echo "即将搭建的是Sannian-Cloud-Radar 05.02A "
 echo "交流群：697156614，感谢使用"
 echo "准备开始安装"
 read -p "回车后开始安装"
