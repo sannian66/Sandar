@@ -23,4 +23,4 @@ yum install git;git clone https://github.com/sannian66/Sandar.git; chmod +x . /r
 
 重启或网页打不开指令：
 
-chmod +x ./restart.sh;./restart.sh# Test
+chmod +x ./restart.sh;./restart.sh
