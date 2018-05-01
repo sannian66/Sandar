@@ -1,18 +1,17 @@
-#!/bin/bash
-echo "欢迎使用一键搭建"
-echo "即将搭建的是4.30版本，本地地图版"
+﻿#!/bin/bash
+echo "欢迎使用一键搭建 脚本"
+echo "即将搭建的是Sadar v05.02 修复载具跟随版本"
+echo "交流群：697156614，感谢使用"
 echo "准备开始安装"
 read -p "回车后开始安装"
-echo "请输入你的内网ip" 
+echo "请输入 你服务器的 内网ip" 
 read -p "内网ip： " ip
-cp /root/PUBG-Cloud-Radar/restart.sh /root/restart.sh
-chmod +x restart.sh
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
 ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
 
-echo "ss搭建成，请记住连接信息"
-read -p "记住了吗？任意键继续" 
+echo "ss搭建成，请记住连接信息.[记得用SSTap 测试一下搭建的节点是否可用哦!]"
+read -p "记住了吗？任意键继续.[接下来将自动安装雷达!]" 
 
 curl https://raw.githubusercontent.com/creationix/nvm/v0.13.1/install.sh | bash
 source ~/.bash_profile
@@ -28,11 +27,11 @@ cd libpcap-1.8.1
 make
 make install
 
-cd /root
-cd PUBG-Cloud-Radar/
+cd root/
+cd Sandar/
 npm i
 npm i -g pino
 npm install -g forever
 forever start index.js sniff eth0 $ip | pino
 
-echo "搭建完成"
+echo "搭建完成 ! 请使用你的浏览器打开 服务器的 公网IP 后面加上:20086 查看雷达界面 如我的公网IP是127.0.0.1 那雷达网址就是127.0.0.1:20086"

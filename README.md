@@ -28,3 +28,5 @@ yum install git;git clone https://github.com/234150476/PUBG-Cloud-Radar.git; chm
 Local computer using SSTAP connection
 
 Watching address  serverIP:20086/
+# Sandar
+# Sandar

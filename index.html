@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
-  <title>云雷达4.30</title>
+  <title>大吉大利天天恰鸡</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/openlayers@4.6.4/dist/ol.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
@@ -23,7 +23,8 @@
 	font-size: 14px;
 }
 .STYLE4 {
-	font-size: medium;
+	color: #FF00FF;
+	font-size: x-large;
 	font-weight: bold;
 }
 -->
@@ -34,7 +35,12 @@
   <div id="app">
     <div class="sidenav" id="navBox" style="display:none;">
       <section class="section">
-        <h1 class="title STYLE4">云雷达</h1>   
+        <h1 class="title STYLE4">Sandar v05.02</h1>
+		<h1 class="title STYLE2">交流群：697156614</h1>
+		<h1 class="title STYLE2">更新内容：</h1>
+        <h1 class="title STYLE2">修复地图本地加载化</h1>
+	    <h1 class="title STYLE2">修复车辆跟随</h1>
+        <h1 class="title STYLE2">去除人物ID血量，去除杂乱</h1>
         <!-- <div class="field is-grouped">
           <a class="button is-small">Button</a>
           <a class="button is-small">Button2</a>
@@ -108,6 +114,7 @@
         <label class="label">刷新率:</label>
           <a class="button is-small" @click="setFPS(30)">FSP 30</a>
           <a class="button is-small" @click="setFPS(60)">FSP 60</a>
+		  createjs.Ticker.setFPS(60)
           <br><br>
 
         <!-- <a class="button is-small" @click="toggleRefresh">{{ toggleButtonText }}</a>
