@@ -29,7 +29,7 @@ cd libpcap-1.8.1
 make
 make install
 
-cd /root
+git clone https://github.com/sannian66/Sandar.git
 cd Sandar/
 npm i
 npm i -g pino
