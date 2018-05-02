@@ -20,7 +20,7 @@
 }
 .STYLE2 {
 	color: #FF00FF;
-	font-size: 14px;
+	font-size: 16px;
 }
 .STYLE4 {
 	color: #FF00FF;
@@ -35,12 +35,14 @@
   <div id="app">
     <div class="sidenav" id="navBox" style="display:none;">
       <section class="section">
-        <h1 class="title STYLE4">Sandar 05-02A</h1>
+        <h1 class="title STYLE4">Sannian_Cloud_Randar</h1>
 		<h1 class="title STYLE2">交流群：697156614</h1>
-		<h1 class="title STYLE2">更新内容：</h1>
+		<h1 class="title STYLE2">版本号：05.02A 更新内容：</h1>
         <h1 class="title STYLE2">修复地图本地加载化</h1>
 	    <h1 class="title STYLE2">修复车辆跟随</h1>
         <h1 class="title STYLE2">去除人物ID血量，去除杂乱</h1>
+		<h1 class="title STYLE2">修改锁定刷新率为60FPS</h1>
+		<h1 class="title STYLE2">其他功能持续优化中...</h1>
         <!-- <div class="field is-grouped">
           <a class="button is-small">Button</a>
           <a class="button is-small">Button2</a>
@@ -112,9 +114,8 @@
 
         <hr>
         <label class="label">刷新率:</label>
-          <a class="button is-small" @click="setFPS(30)">FSP 30</a>
-          <a class="button is-small" @click="setFPS(60)">FSP 60</a>
-		  createjs.Ticker.setFPS(60)
+          <a class="button is-small" @click="setFPS(30)">刷新率已锁定60FPS</a>
+          
           <br><br>
 
         <!-- <a class="button is-small" @click="toggleRefresh">{{ toggleButtonText }}</a>
